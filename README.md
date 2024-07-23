@@ -2,8 +2,6 @@
 
 Welcome to **Weather Janiye** – a simple yet effective weather checker app. This project is built using HTML, CSS, and JavaScript to provide you with current weather information based on city input.
 
-![Weather Janiye Logo](assets/weather-icon.webp)
-
 ## Table of Contents
 
 - [Features](#features)
