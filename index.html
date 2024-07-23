@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main container start -->
+    <div class="main-container">
+     <!-- Background Video -->
+     <video autoplay muted loop class="video">
+      <source src="assets/22070-325253460.mp4" type="video/mp4">
+      
+    </video>
+  
+      <!-- header start -->
+      <header class="header">
+        <div class="logo">
+          <img class="logo-img" src="assets/weather-icon.webp" alt="weather-image" />
+          <h3>Weather Janiye</h3>
+        </div>
+        <nav class="nav-bar">
+          
+        </nav>
+      </header>
+      <!-- header end -->
+      <div class="heading"><h1>Weather Checker</h1></div>
+
+      <div class="input" >
+        <input type="text" name="city-name" id="city-name" placeholder="Enter City Name" >
+        <button class="search button-56">Check Weather</button>
+      </div>
+
+      <!-- main weather details div start  -->
+      <div class="weather-details">
+        <!-- country div start  -->
+        <div class="country">
+          <div class="country-logo">
+            <img src="assets/city.png" alt="city-image" />
+          </div>
+          <h2>Country Details:</h2>
+          <h4 id="api-city"></h4>
+        </div>
+        <!-- country div end  -->
+        <!-- time div start  -->
+        <div class="time">
+          <div class="time-logo">
+            <img src="assets/images__2_-removebg-preview.png" alt="time-image" />
+          </div>
+          <h2>Time:</h2>
+          <h4 id="api-time"></h4>
+        </div>
+        <!-- time div end  -->
+        <!-- temprature div start -->
+        <div class="temprature">
+          <div class="temprature-logo">
+            <img src="assets/temprature.png" alt="temprature-image" />
+          </div>
+          <h2>Temprature:</h2>
+          <h4 id="api-temprature"></h4>
+        </div>
+        <!-- temprature div end  -->
+      </div>
+      <!-- main weather details div end  -->
+    </div>
+    <!-- main container end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

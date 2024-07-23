@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .video {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    z-index: -1;
+    transform: translate(-50%, -50%);
+  }
+  
+  .header {
+    grid-column: 1/13;
+    display: grid;
+  }
+  
+  .logo {
+    display: flex;
+    grid-column: 2/5;
+    justify-content: start;
+    align-items: center;
+    margin: 0 5px;
+  }
+  
+  .logo-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  img {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+  }
+  
+  .nav-bar {
+    grid-column: 5/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .heading {
+    grid-column: 1/13;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .input {
+    grid-column: 1/13;
+    justify-self: center;
+    align-self: center;
+    margin: 30px;
+  }
+  
+  #city-name, .search {
+    margin: 0 10px;
+    background: rgba(255, 193, 6, 0.485); 
+    border: 2px solid rgba(12, 203, 221, 0.485); 
+    padding: 5px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-details {
+    grid-column: 3/11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .country, .time, .temprature {
+    width: 75%;
+    height: 30%;
+    background: rgba(255, 193, 6, 0.14);
+    border: 2px solid rgba(12, 204, 221, 0.255); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .country > *, .time > *, .temprature > * {
+    margin: 10px; 
+  }
+  
